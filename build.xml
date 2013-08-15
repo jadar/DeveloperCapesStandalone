@@ -100,7 +100,7 @@
 	
 	<target name="prep">
 		<antcall target="clean" />
-		
+                <delete dir="${dir.builds}" />
 		<mkdir dir="${dir.currentBuild}" />
 		
 		<antcall target="getForge"/>
@@ -198,7 +198,6 @@
 		<delete dir="${dir.mcp}/reobf/minecraft"/>
 		<delete dir="${dir.downloads}" />
 		<delete dir="${dir.temp}" />
-		<delete dir="${dir.builds}" />
 		<antcall target="deleteMCP" />
 	</target>
 	
