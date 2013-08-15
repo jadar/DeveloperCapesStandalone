@@ -1,0 +1,20 @@
+[
+{
+  "modid" : "devcapesstandalone",
+  "name" : "DeveloperCapes",
+  "version" : "2.0",
+  "url" : "http://www.github.com/Jadar/DeveloperCapes",
+  "credits" : "Jadar",
+  "authors": [
+    "Jadar"
+  ],
+  "description": "Gives specific people a cape!",
+  "updateUrl" : "",
+  "parent" : "",
+  "screenshots": [
+  ],
+  "dependancies": [
+    "Forge"
+  ]
+}
+]
