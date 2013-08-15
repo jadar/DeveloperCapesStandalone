@@ -10,7 +10,7 @@
 		importClass(java.io.FileWriter);
 		importClass(java.io.BufferedWriter);
 	 
-	    var file = new File("version.json");
+	    var file = new File("developercapes/version.json");
 	    fr = new FileReader(file);
 	    br = new BufferedReader(fr);
 	 
@@ -149,7 +149,7 @@
 		<delete dir="${dir.builds}"/>
 		<mkdir dir="${dir.builds}" />
 				
-		<property name="fileName" value="DevCapes-${version}-${minecraftVersion}-build-${buildNumber}.jar"/>
+		<property name="fileName" value="DevCapesStandalone-${version}-${minecraftVersion}-build-${buildNumber}.jar"/>
 
 		<jar destfile="${dir.builds}/${fileName}">
 			<fileset dir="${dir.mcp}/reobf/minecraft" includes="com/" />
@@ -159,7 +159,7 @@
 	<target name="package" unless="isJenkins">
 		<antcall target="makeBuildDir" />
 		
-		<property name="fileName" value="DevCapes-${version}-${minecraftVersion}-ant.jar"/>
+		<property name="fileName" value="DevCapesStandalone-${version}-${minecraftVersion}-ant.jar"/>
 
 		<jar destfile="${dir.builds}/${fileName}">
 			<fileset dir="${dir.mcp}/reobf/minecraft" includes="com/" />
@@ -169,7 +169,7 @@
 	<target name="packageSource" unless="isJenkins">
 		<antcall target="makeBuildDir" />
 				
-		<property name="fileName" value="DevCapes-${version}-${minecraftVersion}-src.jar"/>
+		<property name="fileName" value="DevCapesStandalone-${version}-${minecraftVersion}-src.jar"/>
 
 		<jar destfile="${dir.builds}/${fileName}">
 			<fileset dir="${dir.src}" />
@@ -179,7 +179,7 @@
 	<target name="packageSourceJenkins" if="isJenkins">
 			<antcall target="makeBuildDir" />
 					
-			<property name="fileName" value="DevCapes-${version}-${minecraftVersion}-ant.jar"/>
+			<property name="fileName" value="DevCapesStandalone-${version}-${minecraftVersion}-ant.jar"/>
 
 			<jar destfile="${dir.builds}/${fileName}">
 				<fileset dir="${dir.mcp}/reobf/minecraft" includes="com/" />
