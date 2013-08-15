@@ -29,6 +29,8 @@
 		for (i in struct) {
 			project.setUserProperty(i, struct[i]);
 		}
+		
+		
 	</script>
 	
 	<property name="minecraftVersion" value="1.6.2"/>
@@ -196,6 +198,7 @@
 		<delete dir="${dir.mcp}/reobf/minecraft"/>
 		<delete dir="${dir.downloads}" />
 		<delete dir="${dir.temp}" />
+		<delete dir="${dir.builds}" />
 		<antcall target="deleteMCP" />
 	</target>
 	
