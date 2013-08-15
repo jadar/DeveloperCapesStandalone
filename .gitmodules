@@ -1,0 +1,3 @@
+[submodule "src/devcapes"]
+	path = src/devcapes
+	url = https://github.com/jadar/DeveloperCapes
