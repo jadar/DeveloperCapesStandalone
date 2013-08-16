@@ -155,6 +155,7 @@
 
 		<jar destfile="${dir.builds}/${fileName}">
 			<fileset dir="${dir.mcp}/reobf/minecraft" includes="com/" />
+			<fileset dir="${dir.src}" excludes="com/" />
 		</jar>
 	</target>
 	
@@ -165,6 +166,7 @@
 
 		<jar destfile="${dir.builds}/${fileName}">
 			<fileset dir="${dir.mcp}/reobf/minecraft" includes="com/" />
+			<fileset dir="${dir.src}" excludes="com/" />
 		</jar>
 	</target>
 	
@@ -184,8 +186,7 @@
 			<property name="fileName" value="DevCapesStandalone-${version}-${minecraftVersion}-ant.jar"/>
 
 			<jar destfile="${dir.builds}/${fileName}">
-				<fileset dir="${dir.mcp}/reobf/minecraft" includes="com/" />
-				<fileset dir="${dir.src}/" includes="META-INF/" />
+				<fileset dir="${dir.src}/" />
 			</jar>
 		</target>
 		
