@@ -1,7 +1,7 @@
 /**
  * DeveloperCapes by Jadar
  * License: MIT License (https://raw.github.com/jadar/DeveloperCapes/master/LICENSE)
- * version 2.0
+ * version 2.1
  */
 package com.jadarstudios.developercapes.standalone;
 
@@ -24,7 +24,7 @@ import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(name="DeveloperCapes", modid="devcapesstandalone", version="2.0")
+@Mod(name="DeveloperCapes", modid="devcapesstandalone", version="2.1")
 public class DevCapesStandalone {
 
 	@Instance
@@ -63,7 +63,7 @@ public class DevCapesStandalone {
 	@EventHandler
 	public void load(FMLInitializationEvent event) {
 		if(!Strings.isNullOrEmpty(capeTextUrl))
-			DevCapesUtil.getInstance().addFileUrl(capeTextUrl);
+			DevCapesUtil.addFileUrl(capeTextUrl);
 	}
 	
 }
