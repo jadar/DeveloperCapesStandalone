@@ -35,7 +35,7 @@ archivesBaseName = "DevCapesStandalone-forge-${minecraft.version}"
 sourceSets {
     main {
         java {
-            srcDir 'src/main/developercapes/src'
+            srcDir 'src/main/developercapes/src/'
         }
     }
 }
