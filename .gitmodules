@@ -1,3 +1,3 @@
-[submodule "src/main/java/developercapes"]
-	path = src/main/java/developercapes
+[submodule "src/main/developercapes"]
+	path = src/main/developercapes
 	url = https://github.com/jadar/DeveloperCapes.git

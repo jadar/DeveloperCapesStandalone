@@ -32,6 +32,18 @@ version = "2.1"
 group= "com.jadarstudios.developercapes.standalone"
 archivesBaseName = "DevCapesStandalone-forge-${minecraft.version}"
 
+sourceSets {
+    main {
+        java {
+            srcDir 'src/developercapes'
+            srcDir 'src/java'
+        }
+        resources {
+            srcDir 'src/resources'
+        }
+    }
+}
+
 // jar naming
 jar
 {
