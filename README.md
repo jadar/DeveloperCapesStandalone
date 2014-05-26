@@ -12,6 +12,11 @@ Usage
 * Put the file back into the JAR. Save the JAR.
 * Distribute the JAR.
 
+Downloads
+---
+
+Downloads are in the releases [here](https://github.com/jadar/DeveloperCapesStandalone/releases).
+
 License
 ---
 
