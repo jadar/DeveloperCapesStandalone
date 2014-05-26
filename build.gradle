@@ -9,13 +9,12 @@ buildscript {
             url = "http://files.minecraftforge.net/maven"
         }
         maven {
-            name = "jenkins-releases"
-            url = "http://repo.jenkins-ci.org/releases/"
+            name = "sonatype"
+            url = "https://oss.sonatype.org/content/repositories/snapshots/"
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.0-SNAPSHOT'
-        classpath group: 'org.jenkins-ci', name: 'jenkins', version: '1.33'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
     }
 }
 
@@ -24,13 +23,13 @@ apply plugin: 'forge'
 
 // minecraft properteis
 minecraft {
-	version = "1.6.4-9.11.1.964"
+	version = "1.7.2-10.12.1.1095"
 }
 
 // version and stuff
-version = "2.1"
+version = "3.0"
 group= "com.jadarstudios.developercapes.standalone"
-archivesBaseName = "DevCapesStandalone-forge-${minecraft.version}"
+archivesBaseName = "DevCapesStandalone-${minecraft.version}"
 
 sourceSets {
     main {
@@ -45,13 +44,13 @@ jar
 {
     if(System.getenv().BUILD_NUMBER != null)
     {
-        classifier = "universal-jenkins-${System.getenv().BUILD_NUMBER}"
+        classifier = "client-jenkins-${System.getenv().BUILD_NUMBER}"
         // for getting the version name in jenkins
         new File("envInject.properties").write("VERSION=$version")
     }
     else
     {
-        classifier = "universal-gradle"
+        classifier = "client"
     }
 }
 
