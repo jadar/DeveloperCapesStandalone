@@ -2,11 +2,14 @@
 target/
 build/
 bin/
+run/
 
 # Other files and folders
 .settings/
 .gradle/
 eclipse/
+.idea/
+*.iml
 
 .project
 .classpath
