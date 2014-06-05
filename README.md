@@ -1,7 +1,7 @@
-DeveloperCapesStandalone
+DeveloperCapes Standalone
 ========================
 
-**Current version: v3.1**
+#### Current version: v3.1
 
 A simple mod that uses [DeveloperCapes](https://github.com/jadar/DeveloperCapes). Made for Mod Packs.
 
